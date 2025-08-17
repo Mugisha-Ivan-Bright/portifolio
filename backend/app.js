@@ -11,12 +11,6 @@ import Comment from './model/comment.js';
 
 const app = express();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// console.log(__filename,__dirname)
-app.use(express.static(path.join(__dirname, "../html")))
-
 dotenv.config();
 
 app.use((req,res,next)=>{
@@ -27,6 +21,18 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cors());
 
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// console.log(__filename,__dirname)
+app.use(express.static(path.join(__dirname, "../html")));
+app.use("/css",express.static(path.join(__dirname, "../css")));
+
+
+app.get("/", (req, res)=>{
+    res.sendFile(path.join(__dirname, "../html/landing.html"));
+})
 
 app.post("/submit", async (req, res)=>{
 
@@ -43,7 +49,7 @@ app.post("/submit", async (req, res)=>{
 
         await newFriend.save();
 
-        res.status(200).json({succcess:true, message:"Friend recorded"});
+        res.status(200).json({succcess:true, message:"Friend recorded"}).redirect("./thankyou.html");
         
     } catch (error) {
         res.status(500).json({error:error.message});
