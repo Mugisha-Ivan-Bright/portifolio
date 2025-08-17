@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <link rel="stylesheet" href="../css/landing.css">  
+</head>
+  <body>
+    <div class=" w-full p-0 flex flex-col gap-0">
+        <nav class="m-0 fixed top-0 right-0 left-0 z-200">
+            <ul class="flex justify-center gap-5 md:gap-20 p-5 
+            ">
+                <li class="nav-link hover:text-purple-600"><a href="#about">About</a></li>
+                <li class="nav-link hover:text-purple-600"><a href="#experience">Experience</a></li>
+                <li class="nav-link hover:text-purple-600"><a href="#projects">Projects</a></li>
+                <li class="nav-link hover:text-purple-600"><a href="#support">Support</a></li>
+                <li class="nav-link hover:text-purple-600"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class=" flex flex-col">
+
+            <div id="about" class="flex flex-col gap-5 py-20 px-5">
+                <div class="text-3xl uppercase">About</div>
+                <h1 class="font-semibold text-2xl text-white">Hi I am Ivan!</h1>
+                <div>
+                    <p class="text-white text-xl">A software programmer and a designer</p>
+                    <p class="text-white">I joined Rwanda coding Academy last year</p>
+                </div>
+
+            </div>
+
+            <div id="experience" class="flex flex-col gap-5 py-20 px-5 items-center justify-center">
+                <h1 class="text-3xl uppercase w-full text-center">Experience in a year</h1>
+              <div class="flex flex-col gap-5 justify-center items w-full md:w-200 border-s-4 border-double ps-4 border-purple-500 rounded-xl">              
+                <ul class="flex justify-between items-start">
+               <li class="text-purple-600 w-2/3"><b>Details</b></li>
+               <li class="text-purple-600 flex-1"><b>Reference</b></li>
+              </ul>
+              <ul class="flex justify-between items-start gap-5">
+                <li class="text-white w-2/3">I developed chatting application</li>
+                <li class="text-white hover:text-purple-600 flex-1"><a href="">url/to/my/app</a></li>
+              </ul>
+              <ul class="flex justify-between items-start gap-5">
+                <li class="text-white w-2/3">I learnt to use 4-5 programming languages</li>
+                <li class="text-white hover:text-purple-600 flex-1"><a href="#languages">view all</a></li>
+              </ul>
+              <ul class="flex justify-between items-start items-start gap-5">
+                <li class="text-white w-2/3">I have been taking online AI courses</li>
+                <li class="text-white hover:text-purple-600 flex-1"><a href="#">url/to/approve/it</a></li>
+              </ul>
+              <ul class="flex justify-between items-start gap-5">
+                <li class="text-white w-2/3">I know designing in figma</li>
+                <li class="text-white hover:text-purple-600 flex-1"><a href="#design">url/to/approve/it</a></li>
+              </ul>
+              <ul class="flex justify-between  items-start gap-5">
+                <li class="text-white w-2/3">I know modeling and animating using blender</li>
+                <li class="text-white hover:text-purple-600 flex-1"><a href="#modeling">url/to/approve/it</a></li>
+              </ul>
+              <ul class="flex justify-between items-start gap-5">
+                <li class="text-white w-2/3">I know image editing using adobe photoshop</li>
+                <li class="text-white hover:text-purple-600 flex-1"><a href="#adobe">url/to/approve/it</a></li>
+              </ul>
+            </div>
+            </div>
+            <div id="#ai" class="flex flex-col gap-5 py-20 gap-20 items-center bg-white">
+                <h1 class="text-3xl uppercase">My opinions about AI</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-60">
+                    <div class="card flex flex-col gap-5 p-4 border-3 border-double border-purple-500 max-w-100 md:w-90 hover:scale-102 transition-all ease-in-out">
+                        <div class="flex justify-between">
+                            <h2>Person 1</h2>
+                            <form action="/like" method="post">
+                                <input type="text" hidden name="you">
+                                <button  type="submit" class="button hover:bg-purple-500 hover:text-white  px-5 rounded-xl cursor-pointer border ">Like</button>
+                            </form>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            . Ipsum nostrum maxime soluta odit porro facere quaerat illum quo nobis in.
+                             Aut magnam amet  aspernatur corrupti tempora quis iure aperiam quia.</p>
+                             <!-- <div class="absolute right-1 top-0 text-[3em]">;;</div> -->
+                    </div>
+                    <div class="card flex flex-col gap-5 p-4 border-3 border-double border-purple-500 max-w-100 md:w-90 hover:scale-102 transition-all ease-in-out">
+                        <div class="flex justify-between">
+                            <h2>I oppose this by</h2>
+                            <form action="/like" method="post">
+                                <input type="text" hidden name="me">
+                                <button type="submit" class="button hover:bg-purple-500 hover:text-white  px-5 rounded-xl cursor-pointer border ">Like</button>
+                            </form>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            . Ipsum nostrum maxime soluta odit porro facere quaerat illum quo nobis in.
+                             Aut magnam amet  aspernatur corrupti tempora quis iure aperiam quia.</p>
+                             <!-- <div class="absolute right-1 top-0 text-[3em]">;;</div> -->
+                    </div>
+                
+                    <div class="card flex flex-col gap-5 p-4 border-3 border-double border-purple-500 max-w-100 md:w-90 hover:scale-102 transition-all ease-in-out">
+                        <div class="flex justify-between">
+                            <h2>Person 1</h2>
+                            <form action="/like" method="post">
+                                <input type="text" hidden name="you">
+                                <button  type="submit" class="button hover:bg-purple-500 hover:text-white  px-5 rounded-xl cursor-pointer border ">Like</button>
+                            </form>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            . Ipsum nostrum maxime soluta odit porro facere quaerat illum quo nobis in.
+                             Aut magnam amet  aspernatur corrupti tempora quis iure aperiam quia.</p>
+                             <!-- <div class="absolute right-1 top-0 text-[3em]">;;</div> -->
+                    </div>
+                    <div class="card flex flex-col gap-5 p-4 border-3 border-double border-purple-500 max-w-100 md:w-90 hover:scale-102 transition-all ease-in-out">
+                        <div class="flex justify-between">
+                            <h2>I oppose this by</h2>
+                            <form action="/like" method="post">
+                                <input type="text" hidden name="me">
+                                <button type="submit" class="button hover:bg-purple-500 hover:text-white  px-5 rounded-xl cursor-pointer border ">Like</button>
+                            </form>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+                            . Ipsum nostrum maxime soluta odit porro facere quaerat illum quo nobis in.
+                             Aut magnam amet  aspernatur corrupti tempora quis iure aperiam quia.</p>
+                             <!-- <div class="absolute right-1 top-0 text-[3em]">;;</div> -->
+                    </div>
+                  
+                </div>
+            </div>
+
+            <div id="projects" class="flex flex-col justify-center items-center py-20 gap-5 ">
+                <h1 class="text-3xl uppercase mb-12">My projects</h1>
+                <div class="flex  flex-col gap-5 shadow-xl hover:scale-106 transition-all duration-500" id="project-card">
+                    <p class="text-white ms-1">Chatting app service</p>
+                    <img src="../utils/dancer.avif" alt="" class="w-100 md:w-200">
+                </div>
+                <div class="flex flex-col gap-5  shadow-xl hover:scale-106 transition-all duration-500 "id="project-card">
+                    <p class="text-white ms-1">Designed wireframes for mobile app in figma</p>
+                    <img src="../utils/dancer.avif" alt="" class="w-100 md:w-200">
+                </div>
+                <div class="flex flex-col gap-5  shadow-xl hover:scale-106 transition-all duration-500"id="project-card">
+                    <p class="text-white ms-1">A 3D characters in blender</p>
+                    <img src="../utils/dancer.avif" alt="" class="w-100 md:w-200">
+                </div>
+                <div class="flex flex-col gap-5 shadow-xl hover:scale-106 transition-all duration-500 "id="project-card">
+                    <p class="text-white ms-1">Image editing in adobe photoshop</p>
+                    <img src="../utils/dancer.avif" alt="" class="w-100 md:w-200">
+                </div>
+            </div>
+
+            <div id="goals" class="flex flex-col py-20 px-5 gap-10 items-center">
+                <h1 class="uppercase text-3xl w-full text-center mb-12 text-[#d3abcf]">My ultimate goals</h1>
+                <div class="bg-[#b6d2db] p-5 rounded-xl ring-2 ring-purple-500 hover:scale-102 transition-all duration-500 flex flex-col gap-5 w-100 md:w-1/2">
+                  <div class="flex flex-col gap-3">
+                      <h3 class="text-purple-600 ">About AI</h3>
+                      <li>I am planing to build an AI that help people think in divise with out being addicted on using it</li>
+                  </div>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-purple-600">Action plan</h1>
+                        <div>
+                            <li>Studing using ML tools and study Machine learning to create my own.</li>
+                            <li>I need support from people it could be ideas or anything else based on there experience if possible</li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#b6d2db] p-5 rounded-xl ring-2 ring-purple-500 hover:scale-102 transition-all duration-500 flex flex-col gap-5 w-100 md:w-1/2">
+                    <h3 class="text-purple-600">About Blender</h3>
+                    <p>I want build animated movies about AI addictions and reliable remedy for that problem</p>
+                    <div>
+                        <h1 class="text-purple-600">Action plan</h1>
+                        <div>
+                            <li>I just need 2 weeks to have built it.</li>
+                            <li>I need support from people it could be ideas or anything else based on there experience if possible</li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#b6d2db] p-5 rounded-xl ring-2 ring-purple-500 hover:scale-102 transition-all duration-500 flex flex-col gap-5 w-100 md:w-1/2">
+                    <h3 class="text-purple-600">About Figma</h3>
+                    <li>I want build the UI and prototype for that ai.</li>
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-purple-600">Action plan</h1>
+                        <div>
+                            <li>I just need 2 weeks to have built it.</li>
+                            <li>I need support from people it could be ideas or anything else based on there experience if possible</li>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="support" class="flex flex-col justify-center items-center py-20 gap-5">
+                <h1 class="text-center w-full uppercase text-xl text-[#242020]">If you think of an idea let me know.</h1>
+                <div class="comment bg-white w-100 md:w-1/2 p-5 rounded-xl flex flex-col gap-5" >
+                  
+                    <h1>Comment please.</h1>
+                    <form action="" method="post" id="commentForm">
+                        <div>
+                          
+                            <textarea name="comment" id="comment" rows="3" cols="34" class="ring-1 ring-gray-300 rounded outline-purple-600 w-90 md:w-full ps-4 pt-4"></textarea>
+                        </div>
+                        <button type="submit" id="commentBtn" class="button bg-purple-500 text-white px-6 py-2 rounded shadow-xl hover:bg-purple-700 cursor-pointer transition-all duration-500">Send</button>
+                    </form>
+                </div>
+
+                <h2 class="text-[#242020;]">Or if you would like to keep my contact fill out this form</h2>
+
+                <div class="bg-white w-100 p-5 rounded-xl flex flex-col gap-5">
+                    <form action="" method="post" id="form"
+                    class="w-90 flex flex-col  gap-5">
+                        <div class="form-field flex flex-col gap-2">
+                            <label for="name">User name</label>
+                            <input type="text" name="name" id="name" class="ring-1 h-10 rounded ring-gray-300 px-5 outline-purple-600">
+                        </div>
+                        <div class="form-field flex flex-col gap-2">
+                            <label for="email">Your email address:</label>
+                            <input type="email" name="email" id="email" class="ring-1 ring-gray-300 h-10 rounded px-5 outline-purple-600">
+                        </div>
+                        <button type="submit" class="button bg-purple-500 text-white px-6 py-2 rounded shadow-xl hover:bg-purple-700 cursor-pointer transition-all duration-500">Send</button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-5 py-20 px-5" id="footer">
+                <h1 class="w-full text-center text-xl text-[#d3abcf]">Thank your for your spare time and support.</h1>
+                
+                <footer id="contact">
+                    <h2 class="text-white uppercase">Contact me on</h2>
+                    <ul class="mt-5">
+                        <li><a href="mailto:mugishaivanbright250@gmail.com?subject=hello&body=I%20wanted%20react%20about">Email</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Whatsapp</a></li>
+                        <li><a href="">LinkedIn</a></li>
+                    </ul>
+                    <p class="w-full text-center text-sm mt-5">developer:Ivan 2025&copy;all rights reserved</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+       <script>
+           
+           
+           
+          async function handleSubmit(formData) {
+           try {
+            const {name, email} = formData;
+            if(!name.trim() || !email.trim()) return alert("Both name and email are essential.");
+            
+            
+            const response = await fetch("http://localhost:2300/submit",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"Application/json",
+                },
+                body:JSON.stringify({name,email}),
+            });
+
+            // if(!response.ok) throw new Error("Http error!");
+
+            // alert("Thank you");
+            if(response.ok){
+                window.location.href = "./thankyou.html";
+                return null;
+            }
+            const data = await response.json();
+            console.log(data, response);
+            // return window.location.href = "./thankyou.html"
+           
+            // return true;
+
+            
+        } catch (error) {
+            console.log(error);
+        }
+        }
+    
+        document.getElementById("form").addEventListener("submit", async(e)=>{
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+
+            const formData ={name,email};
+
+           await handleSubmit(formData);
+          
+        
+        document.getElementById("form").reset();
+
+          
+    });
+
+
+
+
+
+    document.getElementById("commentForm").addEventListener("submit", async(e)=>{
+        try {
+            
+        e.preventDefault();
+        let comment = document.getElementById("comment").value;
+        console.log(JSON.stringify({comment}));
+        if(!comment.trim()) return alert("No comment");
+
+        const res = await fetch("http://localhost:2300/comment",{
+          
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({comment})
+        });
+
+        const data = await res.json();
+        if(res.ok){
+           
+           let commentBtn = document.getElementById("commentBtn")
+           commentBtn.innerHTML =data.message;
+           commentBtn.style.backgroundColor ="green";
+
+           setTimeout(()=>{
+            window.location.reload();
+           },500);
+
+
+        }else throw new Error("Something went wrong!")
+
+        document.getElementById("commentForm").reset();
+       
+       }
+        catch (error) {
+            console.log(error.message)
+        }
+    })
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{    
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    /* background-color: rgba(202, 170, 218, 0.701); */
+    font-family: 'Poppins';
+    /* color: white; */
+    /* background: #d3abcf; */
+}
+
+nav{
+    color: white;
+    background: linear-gradient(to top right, rgba(173, 216, 230, 0.656),rgba(116, 166, 185, 0.821));
+    font-weight: 500;
+}
+#about{
+    background-color: #d3abcf;
+}
+
+#experience{
+    background: rgb(182, 210, 219);
+    
+}
+
+#projects{
+    background-color: #d3abcf;
+}
+#project-card{
+    background: #b6d2db;
+}
+#goals{
+    color: white;
+    background-color: #242020;
+}
+
+#support{
+    background: rgba(41, 157, 196, 0.188);
+}
+#footer{
+    background-color: #242020;
+}
