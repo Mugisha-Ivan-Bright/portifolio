@@ -40,7 +40,7 @@
               </ul>
               <ul class="flex justify-between items-start gap-5">
                 <li class="text-white w-2/3">I developed chatting application</li>
-                <li class="text-white hover:text-purple-600 flex-1"><a href="">url/to/my/app</a></li>
+                <li class="text-white hover:text-purple-600 flex-1"><a href="https://full-stack-chatapp-ovii.onrender.com/">chatapp</a></li>
               </ul>
               <ul class="flex justify-between items-start gap-5">
                 <li class="text-white w-2/3">I learnt to use 4-5 programming languages</li>
@@ -128,19 +128,19 @@
                 <h1 class="text-3xl uppercase mb-12">My projects</h1>
                 <div class="flex  flex-col gap-5 shadow-xl hover:scale-106 transition-all duration-500" id="project-card">
                     <p class="text-white ms-1">Chatting app service</p>
-                    <img src="../utils/dancer.avif" alt="" class="w-100 md:w-200">
+                    <img src="/utils/chatapp.png" alt="" class="w-100 md:w-200">
                 </div>
                 <div class="flex flex-col gap-5  shadow-xl hover:scale-106 transition-all duration-500 "id="project-card">
                     <p class="text-white ms-1">Designed wireframes for mobile app in figma</p>
-                    <img src="../utils/dancer.avif" alt="" class="w-100 md:w-200">
+                    <img src="/utils/figma.png" alt="" class="w-100 md:w-200">
                 </div>
                 <div class="flex flex-col gap-5  shadow-xl hover:scale-106 transition-all duration-500"id="project-card">
                     <p class="text-white ms-1">A 3D characters in blender</p>
-                    <img src="../utils/dancer.avif" alt="" class="w-100 md:w-200">
+                    <img src="/utils/blender.png" alt="" class="w-100 md:w-200">
                 </div>
                 <div class="flex flex-col gap-5 shadow-xl hover:scale-106 transition-all duration-500 "id="project-card">
                     <p class="text-white ms-1">Image editing in adobe photoshop</p>
-                    <img src="../utils/dancer.avif" alt="" class="w-100 md:w-200">
+                    <img src="/utils/edit.jpg" alt="" class="w-100 md:w-200">
                 </div>
             </div>
 
@@ -225,10 +225,9 @@
                 <footer id="contact">
                     <h2 class="text-white uppercase">Contact me on</h2>
                     <ul class="mt-5">
-                        <li><a href="mailto:mugishaivanbright250@gmail.com?subject=hello&body=I%20wanted%20react%20about">Email</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Whatsapp</a></li>
-                        <li><a href="">LinkedIn</a></li>
+                        <li><a href="mailto:mugishaivanbright250@gmail.com?subject=hello&body=I%20wanted%20react%20about">Email: mugishaivanbright250@gmail.com</a></li>
+                        <li><a href="">Whatsapp: +250 735024932</a></li>
+                        
                     </ul>
                     <p class="w-full text-center text-sm mt-5">developer:Ivan 2025&copy;all rights reserved</p>
                 </footer>
@@ -246,7 +245,7 @@
             if(!name.trim() || !email.trim()) return alert("Both name and email are essential.");
             
             
-            const response = await fetch("http://localhost:2300/submit",{
+            const response = await fetch("/submit",{
                 method:"POST",
                 headers:{
                     "Content-Type":"Application/json",
@@ -262,14 +261,14 @@
                 return null;
             }
             const data = await response.json();
-            console.log(data, response);
+            
             // return window.location.href = "./thankyou.html"
            
             // return true;
 
             
         } catch (error) {
-            console.log(error);
+            return null;
         }
         }
     
@@ -300,7 +299,7 @@
         console.log(JSON.stringify({comment}));
         if(!comment.trim()) return alert("No comment");
 
-        const res = await fetch("http://localhost:2300/comment",{
+        const res = await fetch("/comment",{
           
             method:"POST",
             headers:{"Content-Type":"application/json"},
@@ -325,7 +324,7 @@
        
        }
         catch (error) {
-            console.log(error.message)
+           return null;
         }
     })
 

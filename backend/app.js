@@ -28,6 +28,7 @@ const __dirname = path.dirname(__filename);
 // console.log(__filename,__dirname)
 app.use(express.static(path.join(__dirname, "../html")));
 app.use("/css",express.static(path.join(__dirname, "../css")));
+app.use("/utils", express.static(path.join(__dirname,"../utils")));
 
 
 app.get("/", (req, res)=>{
