@@ -295,9 +295,7 @@
         try {
             
         e.preventDefault();
-        let comment = document.getElementById("comment").value;
-        console.log(JSON.stringify({comment}));
-        if(!comment.trim()) return alert("No comment");
+        let comment = document.getElementById("comment").value;        if(!comment.trim()) return alert("No comment");
 
         const res = await fetch("/comment",{
           

@@ -50,7 +50,7 @@ app.post("/submit", async (req, res)=>{
 
         await newFriend.save();
 
-        res.status(200).json({succcess:true, message:"Friend recorded"}).redirect("./thankyou.html");
+        res.redirect("/thankyou.html");
         
     } catch (error) {
         res.status(500).json({error:error.message});
